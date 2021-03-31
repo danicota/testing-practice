@@ -1,8 +1,31 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function calc() {
-
+function calc(a,b,c) {
+  function sum(b, c){
+    return b + c;
+  }
+    
+    function difference(b, c) {
+      return b - c;
+    }
+    function product(b, c) {
+      return b * c
+      }
+function quotient(b, c) {
+return b / c
+} 
+switch (a) {
+ case 'add':
+   return sum(b,c);
+   case 'subtract':
+     return difference(b,c);
+     case 'multiply':
+       return product(b,c);
+       case 'divide':
+         return quotient(b,c);
+         default: return "Operation not supported.";
+}
 }
 
 // ==================================================
